@@ -1,2 +1,3 @@
 # tic-tac-toe
- Secont project form The odin project JavaScript Course
+
+Second project form The Odin Project JavaScript Course
