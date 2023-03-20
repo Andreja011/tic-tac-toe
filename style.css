@@ -14,12 +14,8 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1;
   font-weight: 400;
-  color: #555;
-}
-
-ol,
-ul {
-  list-style: none;
+  color: #fff;
+  background-color: #1a1a1a;
 }
 
 a {
@@ -28,6 +24,7 @@ a {
 
 button {
   background: none;
+  border: none;
 }
 
 .container {
@@ -36,10 +33,19 @@ button {
 }
 
 .primary-header {
+  color: #444;
   font-size: 4.8rem;
   font-weight: 900;
   text-align: center;
-  margin: 5rem 0;
+  letter-spacing: 5px;
+  margin: 10rem 0 5rem 0;
+  transition: all 0.5s;
+  cursor: default;
+}
+
+.primary-header:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff;
 }
 
 .section-board-grid {
@@ -51,9 +57,10 @@ button {
 }
 
 .section-board-grid-square {
-  box-shadow: 0 0px 5px 5px rgba(5, 5, 5, 0.2);
+  box-shadow: 0 0px 5px 5px rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   transition: all 0.25s;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
@@ -62,5 +69,39 @@ button {
 
 .section-board-grid-square:hover {
   scale: 1.05;
-  box-shadow: 0 0px 10px 5px rgba(5, 5, 5, 0.2);
+  box-shadow: 0 0px 10px 5px rgba(255, 255, 255, 0.8);
+}
+
+.section-board-grid-square.x,
+.section-board-grid-square.circle {
+  cursor: not-allowed;
+}
+
+.winning-message {
+  margin: 5rem auto;
+}
+
+.restart-btn {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  letter-spacing: 2.5px;
+  font-size: 2.4rem;
+  margin: 5rem auto;
+  padding: 1.5rem;
+  width: 20rem;
+  box-shadow: 0 0px 5px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: all 0.5s;
+
+  display: block;
+}
+
+.restart-btn:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff;
+  box-shadow: 0 0px 10px 5px rgba(255, 255, 255, 0.8);
+}
+
+.restart-btn:active {
+  transform: translateY(3px);
 }
