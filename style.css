@@ -77,8 +77,19 @@ button {
   cursor: not-allowed;
 }
 
-.winning-message {
+.status-display {
   margin: 5rem auto;
+  width: 110rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  transition: all 0.5s;
+
+  display: flex;
+  justify-content: center;
+}
+
+.status-display:hover {
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff;
 }
 
 .restart-btn {
@@ -86,6 +97,7 @@ button {
   color: #444;
   letter-spacing: 2.5px;
   font-size: 2.4rem;
+  font-weight: 700;
   margin: 5rem auto;
   padding: 1.5rem;
   width: 20rem;
